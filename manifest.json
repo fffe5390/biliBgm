@@ -1,0 +1,28 @@
+{
+	"name": "biliBgm",
+
+	"version": "0.1",
+
+	"manifest_version": 2,
+
+	"description": "获取bili新番放送表",
+
+	"background":
+	{
+		"page": "./background.html"
+	},
+
+	"options_page": "./options.html",
+	
+	"permissions":
+	[
+		"http://www.bilibili.com/index/bangumi.json"
+	],
+
+	"browser_action": 
+	{  
+		"default_icon": "./icon.png" ,
+		"default_title": "biliBgm",
+		"default_popup": "./popup.html"
+	}  
+}

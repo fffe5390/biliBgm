@@ -1,0 +1,34 @@
+html
+{
+    min-width: 400px;	/*撑开popup宽度*/
+}
+
+body
+{
+    font-family: "Microsoft YaHei";
+}
+
+#fBgmList li
+{
+    list-style: none;
+    margin: 5px;
+    border-bottom: solid 3px #ffffff;
+}
+
+#fBgmList li a
+{
+    text-decoration: none;
+    padding: 5px;
+    color: #000000;
+}
+
+#fBgmList li:hover
+{
+    background-color: #e0e0e0;
+    border-bottom-color: #6c6c6c;
+}
+
+#fBgmList li input
+{
+	zoom: 120%
+}

@@ -1,0 +1,35 @@
+html
+{
+	min-width: 400px;	/*撑开popup宽度*/
+}
+
+body
+{
+	font-family: "Microsoft YaHei";
+}
+
+/*存在更新的番*/
+#fNewFvList li.new
+{
+	background-color: #66ccff;
+}
+
+#fNewFvList li
+{
+	list-style: none;
+	margin: 5px;
+	border-bottom: solid 3px #ffffff;
+}
+
+#fNewFvList li a
+{
+	text-decoration: none;
+	padding: 5px;
+	color: #000000;
+}
+
+#fNewFvList li:hover
+{
+	background-color: #e0e0e0;
+	border-bottom-color: #6c6c6c;
+}
