@@ -27,7 +27,7 @@ $(document).ready(
 		});
 		
 		
-		//为每个条目checkbox绑定事件，每次点击将存储选中的番并保存，遍历index，保存实体，依赖前端展示index对应后端数据，!bad!
+		//为每个条目checkbox绑定事件，每次点击将存储选中的番并保存，遍历index，保存实体，页面元素的index与bgmList的元素的顺序一一对应
 		$("#fBgmList").children("li").children("input").bind("click", function(){
 			var fvList = [];
 			$("#fBgmList").children("li").children("input").each(function(index, element){
@@ -39,7 +39,7 @@ $(document).ready(
 			DAL.syncAll();
 		});
 		
-		//为每个条目增加打开功能，地址依赖于fNewBgmList元素中的li子元素中的a子元素的第一个元素的文本
+		//为每个条目增加超链接，地址依赖于fNewBgmList元素中的li子元素中的a子元素的第一个元素的文本
 		$("#fBgmList").children("li").children("a").bind("click", function(){
 			util.open("http://www.bilibili.com/sp/" + encodeURIComponent($(this).children().first().text()));
 		});
