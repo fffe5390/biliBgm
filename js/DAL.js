@@ -91,7 +91,7 @@ var DAL = {
 		DAL.setRecList(recList);
 	},
 	
-	//同步Fv和bgm，对于bgm删除的，fv删除，对于fv有的，更新fv中的所有数据
+	//同步Fv和bgm，对于bgm删除的番，fv删除对应的番，对于fv有的番，通过bgm对应的番组信息，更新fv中的所有数据
 	syncFvBgm: function(){
 		var bgmList = DAL.getBgmList();
 		
@@ -123,6 +123,7 @@ var DAL = {
 			for(var j = 0; j < bgmList.length; j++){
 				if(fvList[i].spid === bgmList[j].spid){
 					fvList.splice(i, 1, bgmList[j]);
+					break;
 				}
 			}
 		}
